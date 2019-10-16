@@ -3,19 +3,22 @@
 VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 
 **/
-
+	/* @media only screen 
+	and (min-width: 800px) { */
 	html, body {
 		height: 100% !important;
 		overflow: hidden;
+		display: flex;
+		flex-flow: column wrap;
 	}
 
-	#left-pannel{
+	#left-pannel {
 		background-color: #ffffff;
 		height: 100%;
-    
+		justify-content: unset;
 	}
 
-	.center-inner{
+	.center-inner {
 		display: flex;
 	    -ms-flex-direction: row;
 	    flex-direction: column;
@@ -25,16 +28,16 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	    align-items: center;
 	}
 
-	#right-pannel{
-		height: 100%;		
+	#right-pannel {
+		height: 100%;
 	}
 
 
-	.r1{
+	.r1 {
 		height: 30%;
 	}
 
-	.r2{
+	.r2 {
 		font-size: 45px;
 		text-align: center;
 		margin: 20px 0 20px 0;
@@ -42,7 +45,7 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 		z-index: 999;
 	}
 
-	.r3{
+	.r3 {
 		font-size: 38px;
 		text-align: center;
 		margin: auto;
@@ -51,12 +54,12 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 		z-index: 999;
 	}
 
-	.r4{
+	.r4 {
 		height: 10%;
 	}
 
 	.rfull,
-	.r5{
+	.r5 {
 		width: 100%;		
 		height: 100% !important;
 		display: flex;
@@ -69,16 +72,26 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 		text-align: center;
 	}
 
-	.l1{
+	.l1 {
 		font-size: 46px;
 	}
 
-	.l2{
+	.final__l2 {
+		font-weight: 600;
+		font-size: 25px;
+	}
+
+	.l2 {
 		font-size: 18px;
 		margin-bottom: 10px;
 	}
 
-	.l3-input{
+	.l3-additional {
+		min-width:200px !important;
+		width:50%!important;
+	}
+
+	.l3-input {
 		font-size: 18px;
 		padding: 0 7px 0 10px;
 		min-width: 360px;
@@ -92,14 +105,14 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
     	transition: all 0.15s linear;
 	}
 
-	.l3-input.active .inputPrefix{
+	.l3-input.active .inputPrefix {
 		transition: border 0s linear;
 		transition: background-color 0.15s linear;
 		background-color: rgba(237, 234, 227, 0.32);
 		border-right: 1px solid #111111;
 	}
 
-	.inputPrefix{
+	.inputPrefix {
 		height: auto;
    		display: inherit;
    		padding: 10px 5px 10px 20px;
@@ -107,42 +120,55 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
    		border-bottom-left-radius: 3px;
 	}
 
-	.inner-div-input{
+	.pin {
+		min-width:50px !important;
+		width: 100px;
+	}
+
+	.inner-div-input {
 		min-width: 150px;
 		padding: 5px 5px 5px 5px;
 	}
 
-
-
-	.l4{
+	.l4 {
 		font-size: 14px; 
 	}
 
-	.left-form-section{
-		height: 45%;
+	.left-form-section {
+		height: 23vw;
 		max-width: 450px;
 	}
-	.l-top{
-		height: 30%
+	.l-top {
+		height: 30%;
+		width: 90%;
+		max-width: 450px;
+		position: relative;
 	}
 
+	.btn-back {
+		position: absolute;
+		left: 0px;
+		bottom: 0px;
+	}
 
-	.btn-btm{
+	.material-icons {
+		font-size: 55px;
+		font-weight: 900;
+	}
+
+	.btn-btm {
 		font-size: 24px;
 		padding: 10px 25px 10px 25px;
 		border-radius: 10px;
 		z-index: 99999;			
 	}
 
-
-
-	.l-bottom{
+	.l-bottom {
 		margin-top: 7%;
 		display: flex
 	}
 
-
-	.NavBubble{
+	.NavBubble {
 		width: 10px;
 		height: 10px;
 		background-color: #b3b3b3;
@@ -151,213 +177,181 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 		 transition:  all 0.5s linear;
 	}
 	
-	
-
-	.left-pannel{
+	.left-pannel {
 		 animation: 0.5s ease-out 0s 1 slideInFromRight;
   	}
 
-  	.right-pannel{
+  	.right-pannel {
 		padding: 0px;
 		position: relative;
 		animation: 0.5s ease-out 0s 1 slideInFromLeft;
 	}
-	.right-card__image{
+	.right-card__image {
 		width: 80%;
 		max-width: 700px;
 		height: auto;
 	}
 	  
-  	.right-card.c1{  		
+  	.right-card.c1 {  		
 		background-color: #2c91de;
 		color: #ffffff;
   	}
 
-  	.right-card.c2{
+  	.right-card.c2 {
   		background-color: #fc641c;
 		color: #ffffff;
   	}
 
-  	.right-card.c3{
+  	.right-card.c3 {
   		background-color: #23a234;
 		color: #ffffff;
   	}
 
-  	.right-card.c4{
+  	.right-card.c4 {
   		background-color: #ffd502;
 		color: #ffffff;
   	}
 
-  	.btn-btm.c1{
+  	.btn-btm.c1 {
 		background-color: #2c91de;
 		color: #ffffff;
 		 transition:  all 0.35s linear;
 	}
 
-	.btn-btm.c2{
+	.btn-btm.c2 {
 		background-color: #fc641c;
 		color: #ffffff;
 		 transition:  all 0.35s linear;
 	}
 
-	.btn-btm.c3{
+	.btn-btm.c3 {
 		background-color: #23a234;
 		color: #ffffff;
 		transition:  all 0.35s linear;
 	}
 
-	.btn-btm.c4{
+	.btn-btm.c4 {
 		background-color: #ffd502;
 		color: #ffffff;
 		transition:  all 0.35s linear;
 	}
 
-
-	.NavBubble.c1.active{
+	.NavBubble.c1.active {
 		background-color: #2c91de;
-		 transition:  all 0.5s linear;
+		transition:  all 0.5s linear;
 	}	 
 
-	.NavBubble.c2.active{
+	.NavBubble.c2.active {
 		background-color: #fc641c;
-		 transition:  all 0.5s linear;
+		transition:  all 0.5s linear;
 	}
 
-	.NavBubble.c3.active{
+	.NavBubble.c3.active {
 		background-color: #23a234;
-		 transition:  all 0.5s linear;
+		transition:  all 0.5s linear;
 	}
 
-	.NavBubble.c4.active{
+	.NavBubble.c4.active {
 		background-color: #ffd502;
-		 transition:  all 0.5s linear;
+		transition:  all 0.5s linear;
 	}
 
+  	.right-card.c2,.right-card.c3,.right-card.c4 {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+	}
 
+	.right-card.c1 {
+		position: absolute;
+		height: 100%;
+		width: 100%;
+	}
 
- /* 	.right-card-1.change,.right-card-2.change,.right-card-3.change,.right-card-4.change{
-  		visibility: hidden;
-  	}*/
-
-  	.right-card.c1,.right-card.c2,.right-card.c3,.right-card.c4{
-  		position: absolute;
+	.right-card.notactive {
+		visibility: hidden;
+		opacity: 0;
+		transition: all 10s linear;
   	}
 
-/*
-  	.right-card.fadeOut{
-		 visibility: hidden;
-		 opacity: 0;
-		 transition: all .5s linear;
+  	.right-card.notactive.prev {
+		visibility: hidden;
+		opacity: 0;
+		transition: all 0.5s linear;
+		animation:  0.5s ease-out 0s 1 slideOutToRight;
   	}
 
-  	.right-card.slideFromRight{
-		 visibility: visible;
-		 opacity: 1 !important;
-		 transition: all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideFromRight;
+  	.right-card.active:not(.c1) {
+		visibility: visible !important;
+		opacity: 1 !important;
+		transition: all .5s linear;
+		animation:  0.5s ease-out 0s 1 slideInFromRight;
   	}
 
-
-
-  	.left-form-section.slideUpOut{  
-  		position: absolute;
-  		visibility: hidden;	
-		 opacity: 0;
-		 transition: all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideUpOutAnimation;
+  	.right-card.active.prev {
+		visibility: visible !important;
+		opacity: 1 !important;
+		transition: all 0s linear;
+		animation: none !important;
   	}
 
-  	.left-form-section.slideUpIn{  	
-  		position: inherit !important;
-  		visibility: visible !important;	
-		 opacity: 1 !important;
-		 transition:  all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideUpInAnimation;
-  	}
-
-  	*/
-  
-
-/*------------------------------------------------------------------*/
-
-	.right-card.notactive{
-		 visibility: hidden;
-		 opacity: 0;
-		 transition: all 10s linear;
-  	}
-
-  	.right-card.notactive.prev{
-		 visibility: hidden;
-		 opacity: 0;
-		 transition: all 0.5s linear;
-		 animation:  0.5s ease-out 0s 1 slideOutToRight;
-  	}
-
-  	.right-card.active:not(.c1){
-		 visibility: visible !important;
-		 opacity: 1 !important;
-		 transition: all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideInFromRight;
-  	}
-
-  	.right-card.active.prev{
-		 visibility: visible !important;
-		 opacity: 1 !important;
-		 transition: all 0s linear;
-		 animation: none !important;
-  	}
-
-
-
-
-  
-
-
-
-
-	
-	.left-form-section.notactive{  
+	.left-form-section.notactive {  
   		position: absolute;
   		visibility: hidden;	
-		 opacity: 0;
-		 transition: all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideUpOutAnimation;
+		opacity: 0;
+		transition: all .5s linear;
+		animation:  0.5s ease-out 0s 1 slideUpOutAnimation;
   	}
 
-
-
-  	.left-form-section.active:not(.c1){  	
+  	.left-form-section.active:not(.c1) {  	
   		position: inherit !important;
   		visibility: visible !important;	
-		 opacity: 1 !important;
-		 transition:  all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideUpInAnimation;
+		opacity: 1 !important;
+		transition:  all .5s linear;
+		animation:  0.5s ease-out 0s 1 slideUpInAnimation;
   	}
 
-
-  	.left-form-section.notactive.prev{ 
+  	.left-form-section.notactive.prev { 
   	animation:  0.5s ease-out 0s 1 slideDownOutAnimation; 
   		position: absolute;
   		visibility: hidden;	
-		 opacity: 0;
-		 transition: all .5s linear;
+		opacity: 0;
+		transition: all .5s linear;
 		 
   	}
 
-
-
-  	.left-form-section.active.prev{  	
+  	.left-form-section.active.prev {  	
   		position: inherit !important;
   		visibility: visible !important;	
-		 opacity: 1 !important;
-		 transition:  all .5s linear;
-		 animation:  0.5s ease-out 0s 1 slideDownInAnimation;
-  	}
+		opacity: 1 !important;
+		transition:  all .5s linear;
+		animation:  0.5s ease-out 0s 1 slideDownInAnimation;
+	  }
+	  
+	  .inner-div-input {
+		border: 0px;
+	}
+
+	.inner-div-input:focus {
+		outline: none !important;
+	}
 
 
+	.l3-input.active {
+		color: #111111;
+		border: 1px solid #837d7d !important;
+	}
 
+	.class-blocks {
+		background-color: blue;
+		width: 18%;
+		height: 75px;
+		margin: 10px; 
+		display: inline-block;
+	}
 
-
+	/*---------------- Animations -------------------------*/
   	@keyframes slideInFromRight {
 	  0% {
 	  	transform: translateX(100%);
@@ -376,7 +370,6 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	  }
 	}
 
-
   	@keyframes slideUpInAnimation {
 	  0% {
 	  	transform: translateY(100%);
@@ -385,7 +378,6 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	    transform: translateY(0%);
 	  }
 	}
-
 
   	@keyframes slideUpOutAnimation {
 	  0% {
@@ -396,8 +388,6 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	  }
 	}
 
-
-
 	@keyframes slideDownInAnimation {
 	  0% {
 	  	transform: translateY(-100%);
@@ -407,7 +397,6 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	  }
 	}
 
-
 	@keyframes slideDownOutAnimation {
 	  0% {
 	  	transform: translateY(100%);
@@ -416,8 +405,6 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	    transform: translateY(200%);
 	  }
 	}
-
-
 
   	@keyframes slideInFromLeft {
 	  0% {
@@ -443,29 +430,4 @@ VIEW IN FULLSCREEN FOR ACTUAL EXPERIENCE. HAVE FUN.
 	  100% {
 	    transform: translateX(0);
 	  }
-	}
-
-
-
-	.inner-div-input{
-		border: 0px;
-	}
-
-	.inner-div-input:focus{
-		outline: none !important;
-	}
-
-
-	.l3-input.active{
-		color: #111111;
-		border: 1px solid #837d7d !important;
-	}
-
-
-	.class-blocks{
-		background-color: blue;
-		width: 18%;
-		height: 75px;
-		margin: 10px; 
-		display: inline-block;
 	}
